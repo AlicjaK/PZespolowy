@@ -1,0 +1,42 @@
+@model BDPZespolowy.Models.Klient
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Klient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Klient_Imie)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Klient_Imie)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Klient_Nazwisko)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Klient_Nazwisko)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Klient_Nrtelefonu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Klient_Nrtelefonu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Klient_Pesel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Klient_Pesel)
+        </dd>
+    </dl>
+</div>
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p>

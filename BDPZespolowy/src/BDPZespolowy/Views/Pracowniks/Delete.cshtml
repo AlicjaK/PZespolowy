@@ -1,0 +1,46 @@
+@model BDPZespolowy.Models.Pracownik
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Pracownik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik_Imie)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik_Imie)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik_Nazwisko)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik_Nazwisko)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik_Nrtelefonu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik_Nrtelefonu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik_Pesel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik_Pesel)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

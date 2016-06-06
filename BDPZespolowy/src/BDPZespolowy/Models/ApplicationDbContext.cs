@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
+using BDPZespolowy.Models;
 
 namespace BDPZespolowy.Models
 {
@@ -16,5 +17,14 @@ namespace BDPZespolowy.Models
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+        public DbSet<Klient> Klient { get; set; }
+        public DbSet<Cena> Cena { get; set; }
+        public DbSet<Pokoj> Pokoj { get; set; }
+        public DbSet<Pracownik> Pracownik { get; set; }
+        public DbSet<Raporty> Raporty { get; set; }
+        public DbSet<Rezerwacja> Rezerwacja { get; set; }
+        public DbSet<Stanowisko> Stanowisko { get; set; }
+        public DbSet<Termin> Termin { get; set; }
+        public DbSet<Znizki> Znizki { get; set; }
     }
 }

@@ -1,0 +1,42 @@
+@model BDPZespolowy.Models.Pracownik
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pracownik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik_Imie)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik_Imie)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik_Nazwisko)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik_Nazwisko)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik_Nrtelefonu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik_Nrtelefonu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik_Pesel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik_Pesel)
+        </dd>
+    </dl>
+</div>
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p>

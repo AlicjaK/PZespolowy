@@ -1,0 +1,42 @@
+@model BDPZespolowy.Models.Termin
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Termin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Termin_Do)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Termin_Do)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Termin_DoGodziny)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Termin_DoGodziny)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Termin_Od)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Termin_Od)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Termin_OdGodziny)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Termin_OdGodziny)
+        </dd>
+    </dl>
+</div>
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p>

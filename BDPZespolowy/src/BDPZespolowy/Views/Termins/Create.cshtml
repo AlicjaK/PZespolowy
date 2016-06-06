@@ -1,0 +1,58 @@
+@model BDPZespolowy.Models.Termin
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Termin</h4>
+        <hr />
+        <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Termin_Do" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Termin_Do" class="form-control" />
+                <span asp-validation-for="Termin_Do" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Termin_DoGodziny" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Termin_DoGodziny" class="form-control" />
+                <span asp-validation-for="Termin_DoGodziny" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Termin_Od" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Termin_Od" class="form-control" />
+                <span asp-validation-for="Termin_Od" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Termin_OdGodziny" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Termin_OdGodziny" class="form-control" />
+                <span asp-validation-for="Termin_OdGodziny" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

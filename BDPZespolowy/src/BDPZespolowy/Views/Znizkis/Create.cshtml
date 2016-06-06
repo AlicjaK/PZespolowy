@@ -1,0 +1,44 @@
+@model BDPZespolowy.Models.Znizki
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Znizki</h4>
+        <hr />
+        <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Znizki_LPunktow" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Znizki_LPunktow" class="form-control" />
+                <span asp-validation-for="Znizki_LPunktow" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Znizki_ProcZnizki" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Znizki_ProcZnizki" class="form-control" />
+                <span asp-validation-for="Znizki_ProcZnizki" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
