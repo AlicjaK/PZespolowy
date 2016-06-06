@@ -7,7 +7,7 @@ namespace BDPZespolowy.Models
 {
     public class Termin
     {
-        public int Termin_PKid { get; set; }
+        public int ID { get; set; }
         public string Termin_Od { get; set; }
         public string Termin_Do { get; set; }
         public int Termin_OdGodziny { get; set; }

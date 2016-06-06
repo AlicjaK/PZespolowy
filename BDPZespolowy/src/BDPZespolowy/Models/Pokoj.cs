@@ -7,7 +7,7 @@ namespace BDPZespolowy.Models
 {
     public class Pokoj
     {
-        public int Pokoj_Pkid { get; set; }
+        public int ID { get; set; }
         public int Pokoj_Numer { get; set; }
         public bool Pokoj_Dostępnosc { get; set; }
         public int Pokoj_IloscMiejsc { get; set; }

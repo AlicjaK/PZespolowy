@@ -8,9 +8,9 @@ namespace BDPZespolowy.Models
     public class Pracownik
     {
 
-        public int Pracownik_PKid { get; set; }
-        public int Adres_FKid { get; set; }
-        public decimal Stanowisko_FKid { get; set; }
+        public int ID { get; set; }
+        //public int Adres_FKid { get; set; }
+       // public decimal Stanowisko_FKid { get; set; }
         public string Pracownik_Imie { get; set; }
         public string Pracownik_Nazwisko { get; set; }
         public int Pracownik_Pesel { get; set; }
