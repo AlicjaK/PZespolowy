@@ -3,7 +3,7 @@ using Microsoft.AspNet.Mvc;
 
 namespace BDPZespolowy.Controllers
 {
-    public class KlientStrController : Controller
+    public class KlientViewController : Controller
     {
         public IActionResult Index()
         {
