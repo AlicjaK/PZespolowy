@@ -9,7 +9,7 @@ namespace BDPZespolowy.Models
     {
         public int ID { get; set; }
         public string Stanowisko_Nazwa { get; set; }
-        public int Stanowisko_LPracowników { get; set; }
+        public int Stanowisko_LPracownikow { get; set; }
         public float Stanowisko_Wypłata { get; set; }
     }
 }
